@@ -1,0 +1,67 @@
+{
+  "builder_name": null,
+  "citation": "",
+  "config_name": null,
+  "dataset_size": null,
+  "description": "",
+  "download_checksums": null,
+  "download_size": null,
+  "features": {
+    "data": {
+      "content_loc": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "description": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "duration": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "family_friendly": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "loc": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "publication_date": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "thumbnail_loc": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "title": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "view_count": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      }
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "post_processed": null,
+  "post_processing_size": null,
+  "size_in_bytes": null,
+  "splits": null,
+  "supervised_keys": null,
+  "task_templates": null,
+  "version": null
+}
