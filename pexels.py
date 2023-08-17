@@ -23,18 +23,21 @@ os.makedirs(video_directory, exist_ok=True)
 def download_single_video(index, row):
     url = row["content_loc"]
     filename = os.path.join(video_directory, f"{index}.mp4")
+    if os.path.exists(filename):
+        print(f"Skipping video {index}: {url}")
+        return
     print(f"Downloading video {index}: {url}")
     download_video(url, filename)
 
 
 # Use ThreadPoolExecutor to download videos in parallel
 with ThreadPoolExecutor(
-    max_workers=32
+    max_workers=64
 ) as executor:  # You can adjust max_workers based on your needs
     futures = [
         executor.submit(download_single_video, index, row)
         for index, row in data.iterrows()
-        if index < 10000
+        if index < 100000
     ]
 
     # Wait for the futures to complete
