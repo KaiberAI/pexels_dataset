@@ -13,5 +13,5 @@ Instructions:
 3. Install ffmpeg: `conda install ffmpeg`
 4. Install python dependencies `pip install -r requirements.txt`
 5. Download 10,000 videos (total # is editable in the script): `python pexels.py`
-6. Split videos into chunks of 4s (total # is editable in script): `python process_chunks.py`
+6. Split videos into chunks of 4s (total # is editable in script): `python resize_videos.py` - note: this is to reduce time loading in the data, this will crop the video to 256x256 and maintain aspect ratio
 7. Set the pexels_chunks folder as the training data source for your training.
